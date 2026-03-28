@@ -1,0 +1,37 @@
+name: Skill request
+description: Propose a new skill or a meaningful upgrade to an existing one.
+title: "[Skill]: "
+labels:
+  - enhancement
+body:
+  - type: input
+    id: skill_name
+    attributes:
+      label: Proposed skill or change
+      placeholder: analytics-dashboard, improve planning-setup research support
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What repeated workflow or agent struggle should this skill address?
+    validations:
+      required: true
+  - type: textarea
+    id: triggers
+    attributes:
+      label: Example triggers
+      description: What would a user say that should trigger this skill?
+      placeholder: |
+        "Make this dashboard feel like a real product"
+        "Set up planning files for this project"
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: Helpful references or assets
+      description: Mention any docs, schemas, templates, or example outputs that should ship with the skill.
+    validations:
+      required: false
