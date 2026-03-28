@@ -9,6 +9,8 @@ This repository packages two reusable `SKILL.md`-based skills:
 
 The layout follows the common agent-skills pattern: each skill lives in its own folder with a `SKILL.md` entrypoint plus optional `references/` and `templates/` files.
 
+See [CHANGELOG.md](CHANGELOG.md) for release history.
+
 ## Included Skills
 
 | Skill | Purpose | Use When |
