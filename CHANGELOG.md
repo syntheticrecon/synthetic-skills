@@ -8,6 +8,7 @@ The format is based on Keep a Changelog and the project uses semantic version ta
 
 ### Added
 - Root changelog for tracking repository-level changes across releases.
+- Root [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md) instructions that require branch-based changes, changelog updates, and tag-based releases.
 
 ## [0.1.1] - 2026-03-28
 
