@@ -1,0 +1,38 @@
+name: Bug report
+description: Report a broken skill, invalid guidance, or repository problem.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template when a skill gives bad guidance, links are broken, or repo automation behaves incorrectly.
+  - type: input
+    id: skill
+    attributes:
+      label: Skill or area
+      description: Which skill or repo area is affected?
+      placeholder: product-design, planning-setup, release workflow
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the incorrect behavior or broken output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction or trigger prompt
+      description: Include the prompt, workflow, or file path that reproduces the issue.
+    validations:
+      required: false

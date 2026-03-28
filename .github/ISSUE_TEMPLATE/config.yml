@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Repository README
+    url: https://github.com/syntheticrecon/synthetic-skills#readme
+    about: Read the repo overview and current skill catalog before opening an issue.
