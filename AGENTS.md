@@ -15,7 +15,6 @@ This repository publishes reusable agent skills. Keep release hygiene consistent
 ## Branch And Merge Rules
 
 - Never work directly on `main`.
-- Use branch names like `codex/add-skill`, `codex/update-product-design`, or `codex/repo-hardening`.
 - Keep `main` linear. Prefer squash or rebase merge behavior that does not introduce merge commits.
 - Do not bypass branch protection unless there is a concrete emergency.
 
@@ -30,14 +29,14 @@ This repository publishes reusable agent skills. Keep release hygiene consistent
 
 - Use semantic version tags in the form `vX.Y.Z`.
 - Use:
-  - patch for fixes, wording updates, small repo/process improvements
-  - minor for new skills, major expansions, or significant new templates/references
-  - major only for breaking structural changes
+    - patch for fixes, wording updates, small repo/process improvements
+    - minor for new skills, major expansions, or significant new templates/references
+    - major only for breaking structural changes
 - Tag from `main` after the merge is complete.
 - Push the tag and confirm the automated release succeeded.
 
 ## Scope Checks
 
 - Update [README.md](README.md) when the skill catalog, positioning, or repo usage changes.
-- Keep `AGENTS.md` and `CLAUDE.md` aligned. If one changes, update the other in the same edit.
+- `CLAUDE.md` should remain a symlink to `AGENTS.md`. Update `AGENTS.md`, not the symlink target separately.
 - Keep each skill's `SKILL.md` concise and keep deeper material in linked `references/` or `templates/`.
